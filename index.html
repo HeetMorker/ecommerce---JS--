@@ -1,0 +1,2929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest - Grocery Store WooCommerce</title>
+    <!-- Slider Css -->
+    <link rel="stylesheet" href="asset/Css/slick.css">
+    <link rel="stylesheet" href="asset/Css/slick-theme.css">
+    <!-- Font Family Css -->
+    <link rel="stylesheet" href="asset/Font Family/stylesheet.css">
+    <!-- Headline Css -->
+    <link rel="stylesheet" href="asset/Css/headline.css">
+    <!-- Icons Css -->
+    <link rel="stylesheet" href="asset/Css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="asset/Css/all.min.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="asset/Css/bootstrap.min.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="asset/Css/style.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="loader">
+        <img src="asset/Images/loading.gif" alt="">
+    </div>
+
+    <!-- TOP NAV SECTION -->
+    <section class="p-tb-10 bs-border d-xl-block d-none">
+        <nav class="container ">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <ul class="d-flex align-items-center header-info m-0">
+                        <li class="position-relative me-20"><a href="" class="lato fs-13 text-grey">About Us</a></li>
+                        <li class="position-relative me-20"><a href="" class="lato fs-13 text-grey">My Account</a></li>
+                        <li class="position-relative me-20"><a href="" class="lato fs-13 text-grey">Wishlist</a></li>
+                        <li class="position-relative me-20"><a href="" class="lato fs-13 text-grey">Order Tracking</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="cd-headline slide">
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible bs-theme">100% Secure delivery without contacting the courier</b>
+                            <b class="bs-theme">Trendy 25silver jewelry, save up 35% off today</b>
+                        </span>
+                    </div>
+                </div>
+                <!-- HELP CALL -->
+                <div class="col-4">
+                    <ul class="d-flex align-items-center header-info m-0 justify-content-end">
+                        <li class="position-relative me-20"><a href="#" class="lato fs-13 text-grey">Need Help?Call
+                                us:<span class="bs-theme">+1800900122</span></a></li>
+                        <li class="position-relative me-20 Languages"><a href=""
+                                class="lato fs-13 text-grey">English<span><i
+                                        class="bi bi-chevron-down fs-12"></i></span></a>
+                            <ul class="country-dropdown position-absolute start-0 bg-white ">
+                                <li><a href="" class="text-grey fs-13"><img src="asset/Images/france.png" width="16px"
+                                            height="16px" alt="francais"> Français</a></li>
+                                <li><a href="" class="text-grey fs-13"><img src="asset/Images/deutsch.png" width="16px"
+                                            height="16px" alt="Deutsch"> Deutsch</a></li>
+                                <li><a href="" class="text-grey fs-13"><img src="asset/Images/russian.jpg" width="16px"
+                                            height="16px" alt=""> Pусский</a></li>
+                            </ul>
+                        </li>
+                        <li class="position-relative me-20 currency"><a href="" class="lato fs-13 text-grey">INR<span><i
+                                        class="bi bi-chevron-down fs-12"></i></span></a>
+                            <ul class="currency-dropdown position-absolute start-0 bg-white">
+                                <li><a href="" class="text-grey fs-13"><img src="asset/Images/france.png" width="16px"
+                                            height="16px" alt="francais" class="me-2">USD</a></li>
+                                <li><a href="" class="text-grey fs-13"><img src="asset/Images/deutsch.png" width="16px"
+                                            height="16px" alt="Deutsch" class="me-2">MBP</a></li>
+                                <li><a href="" class="text-grey fs-13"><img src="asset/Images/russian.jpg" width="16px"
+                                            height="16px" alt="" class="me-2">EU</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- HEADER SECTION -->
+    <section class="p-tb-30 bs-border">
+        <header class="container">
+            <div class="d-flex">
+                <div class="logo">
+                    <a href="index.html"><img src="asset/Images/logo.png" alt="logo"></a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="header-right position-relative w-700">
+                        <input type="text" name="text" class="searchbar" id="serch" placeholder="Serch for products..."
+                            class="w-600 h-100">
+                        <button class="search-btn">Search</button>
+                    </div>
+
+                    <!-- header-right Vendor and icons -->
+                    <div class="header-action-right d-flex align-items-center">
+                        <div class="vendor p-lr-30">
+                            <button class="vendor-btn">Become Vendor <i class="mt-2 bi bi-arrow-right"></i></button>
+                        </div>
+                        <!-- icon 1 -->
+                        <div class="header-icon position-relative p-lr-10">
+                            <lord-icon class="position-absolute" src="https://cdn.lordicon.com/tyounuzx.json" trigger="hover" colors="primary:#121331,secondary:#3bb77e" style="width:40px;height:40px;top:-7px;">
+                        </lord-icon>
+                            <span class="text-grey pl-40">Compare</span>
+                        </div>
+                       <!-- icon 2 -->
+                       <div class="header-icons position-relative p-lr-10">
+                        <lord-icon class="position-absolute" src="https://cdn.lordicon.com/rjzlnunf.json"trigger="hover" colors="primary:#121331,secondary:#3bb77e"style="width:40px;height:40px;top:-6px;"></lord-icon>
+                        <span class="text-grey pl-40">Wishlist</span>
+                    </div>
+                    <!-- icon 3 -->
+                    <div class="header-icon main-cart position-relative p-lr-10" id="cartIcon">
+                        <lord-icon class="position-absolute" src="https://cdn.lordicon.com/slkvcfos.json"trigger="hover" colors="primary:#121331,secondary:#3bb77e"style="width:40px;height:40px;top:-6px"></lord-icon>
+                        <span class="text-grey pl-40">Cart</span>
+                        <div class="cart-number position-absolute">
+                            <p class="m-0 fs-13 quicksand fw-bolder" id="cartCount">0</p>
+                        </div>
+                    </div>
+                    <!-- icon 4 -->
+                    <div class="header-icon-4 position-relative p-lr-10">
+                        <lord-icon class="position-absolute" src="https://cdn.lordicon.com/eszyyflr.json"trigger="hover"colors="primary:#121331,secondary:#3bb77e"style="width:40px;height:40px;top:-10px"></lord-icon>
+                        <span class="text-grey pl-40">Account</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="main-menu bs-border">
+        <div class="container d-flex align-items-center h-72 justify-content-between">
+            <div class="categories d-flex position-relative">
+                <a class=" pr-35"><button class="categories-btn"><i class="bi bi-ui-checks-grid"></i> Browse All
+                        Categories<i class="bi bi-chevron-down ps-2"></i></button></a>
+                <!-- CATEGORY ITEMS WITH DROPDOWN -->
+                <div class="categories-dropdown position-absolute top-100">
+                    <ul class="d-flex m-0 flex-wrap">
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-9.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Wines & Drinks</span>
+                                <p class="no_items">1</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-8.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Vegetables</span>
+                                <p class="no_items">9</p>
+                            </a>
+                        </li>
+                        <li class="categories-items Uncategorized position-relative">
+                            <a href=""><span class="text-dark fw-bold fs-14 quicksand"> Uncategorized</span>
+                                <p class="no_items">9</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-6.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Milks & Dairies</span>
+                                <p class="no_items">3</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-10.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Fresh Seafood</span>
+                                <p class="no_items">5</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-7.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Fresh Fruit</span>
+                                <p class="no_items">8</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-1.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Deal Of The Day</span>
+                                <p class="no_items">4</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-3.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Clothing & Beauty</span>
+                                <p class="no_items">2</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a href=""><img class="position-absolute"
+                                    src="asset/Images/category-11.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Bread and Juice</span>
+                                <p class="no_items">5</p>
+                            </a>
+                        </li>
+                        <li class="categories-items position-relative"><a h ref=""><img class="position-absolute"
+                                    src="asset/Images/category-2.png" width="30px" alt="">
+                                <span class="text-dark fw-bold fs-14 quicksand"> Baking Material</span>
+                                <p class="no_items">7</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="deals d-flex align-items-center m-0">
+                    <li class="me-50"><a href=""><i class="bi bi-fire fs-5 bs-theme"></i><span
+                                class="ps-2 text-dark quicksand">Hot Deals</span></a></li>
+                </ul>
+                <ul class="menus d-flex align-items-center m-0">
+                    <li class="pr-17"><a href="" class="quicksand bs-theme">Home <i class="bi bi-chevron-down "></i></a>
+                    </li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">About </a></li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">Shop <i
+                                class="bi bi-chevron-down "></i></a></li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">Vendors <i
+                                class="bi bi-chevron-down "></i></a></li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">Mega Menu<i
+                                class="bi bi-chevron-down "></i></a></li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">Blog<i
+                                class="bi bi-chevron-down "></i></a></li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">Pages<i
+                                class="bi bi-chevron-down "></i></a></li>
+                    <li class="p-lr-17"><a href="" class="quicksand text-dark">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="contact d-xxl-flex align-items-center  d-none">
+                <div class="cont-icon">
+                    <i class="bi bi-headset fs-1"></i>
+                </div>
+                <div class="number">
+                    <p><a href="tel:1900888123" class="d-block bs-theme fs-26 quicksand fw-bolder">1900888123</a><span
+                            class="d-block">24/7 Support Center</span></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BANNER SECTION -->
+    <section class="p-tb-20">
+        <div class="container p-10">
+            <div class="banner m-0">
+                <div class="slide-1 position-relative">
+                    <div class="slide-content position-absolute ">
+                        <h1 class="fs-72 quicksand heading-black lh-1 fw-bolder mb-40 ">Don’t miss
+                            amazing</br>grocerydeals</h1>
+                        <p class="mb-65 lato fs-30 text-grey">Sign up for the daily newsletter</p>
+                        <form action="" class="sub-form w-450 h-64 position-relative">
+                            <input type="email" name="email" placeholder="Your email address"
+                                class="w-100 h-100 br-30 border-0 p-lr-30" required="">
+                            <input type="submit" name="Subscribe" value="Subscribe"
+                                class="position-absolute end-0 p-lr-30 bg-theme border-0 h-100 br-30 quicksand text-light fw-bold"
+                                required="">
+                        </form>
+                    </div>
+                </div>
+                <div class="slide-2 ">
+                    <div class="slide-content position-absolute">
+                        <h1 class="fs-72 quicksand heading-black lh-1 fw-bolder mb-40 ">Fresh Vegetables</br>Big
+                            discount</h1>
+                        <p class="mb-65 lato fs-30 text-grey">Save up to 50% off on your first order</p>
+                        <form action="" class="sub-form w-450 h-64 position-relative">
+                            <input type="email" name="email" placeholder="Your ress"
+                                class="w-100 h-100 br-30 border-0 p-lr-30" required="">
+                            <input type="submit" name="Subscribe" value="Subscribe"
+                                class="position-absolute end-0 p-lr-30 bg-theme border-0 h-100 br-30 quicksand text-light fw-bold"
+                                required="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section class="pt-15">
+        <div class="container d-flex align-items-center">
+            <div class="featured-title p-10 w-23 ">
+                <h2 class="fs-32 heading-black m-0 quicksand fw-bold">Featured Categories</h2>
+            </div>
+            <div class="featured-tabs m-t-4 p-10">
+                <ul class="d-flex m-0  align-items-center">
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="trs quicksand heading-black fs-15 fw-semibold ">Cake & Milk</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="trs quicksand heading-black fs-15 fw-semibold ">Coffes & Teas</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="trs quicksand heading-black fs-15 fw-semibold ">Pet Foods</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="trs quicksand heading-black fs-15 fw-semibold ">Vegetables</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED ITEMS -->
+    <section>
+        <div class="container">
+            <div class="main-items p-10">
+                <!-- ITEM-1 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-1 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-13.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Cake & Milk</a></h6><span
+                            class="lato text-grey fs-6">11 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-2 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-2 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-12.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Oganic Kiwi</a></h6><span
+                            class="lato text-grey fs-6">6 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-3 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-3 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-11.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Peach</a></h6><span
+                            class="lato text-grey fs-6">6 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-4 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-4 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-11.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Red apple</a></h6><span
+                            class="lato text-grey fs-6">10 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-5 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-5 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-3.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Snacks</a></h6><span
+                            class="lato text-grey fs-6">11 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-6 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-6 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-1.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Vegetables</a></h6><span
+                            class="lato text-grey fs-6">6 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-7 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-7 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-2.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Strawberry</a></h6><span
+                            class="lato text-grey fs-6">10 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-8 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-8 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-4.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Black plum</a></h6><span
+                            class="lato text-grey fs-6">10 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-9 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-1 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-5.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Custard apple</a></h6><span
+                            class="lato text-grey fs-6">10 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-10 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-4 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-14.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Coffe & Tea</a></h6><span
+                            class="lato text-grey fs-6">11 items</span>
+                    </div>
+                </div>
+                <!-- ITEM-11 -->
+                <div class="items border-theme trans br-10 mr-20 w-141  bg-slider-3 item-pad d-flex flex-column ">
+                    <div class="item-img text-center m-auto">
+                        <img src="asset/Images/cat-15.png" alt="" width="80px" height="80px" class="trs mb-20">
+                    </div>
+                    <div class="item-title text-center">
+                        <h6><a href="" class="heading-black quicksand fs-6 fw-bold trs">Headphones</a></h6>
+                        <span class="lato text-grey fs-6">4 items</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POSTER SECTION -->
+    <section class="poster p-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-4  position-relative">
+                    <img src="asset/Images/banner-1.png" alt="" class="img-fluid br-10">
+                    <div class="poster-text p-lr-50 position-absolute">
+                        <h4 class="quicksand fs-24 fw-bolder mb-15">Everyday Fresh &amp; <br>Clean with Our<br> Products
+                        </h4>
+                        <a href="" class="text-light quicksand fw-bolder br-5 fs-12">Shop Now <i
+                                class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-4  position-relative">
+                    <img src="asset/Images/banner-2.png" alt="" class="img-fluid br-10">
+                    <div class="poster-text p-lr-50 position-absolute">
+                        <h4 class="quicksand fs-24 fw-bolder mb-15">Make your Breakfast<br>Healthy and Easy</h4>
+                        <a href="" class="text-light quicksand fw-bolder br-5 fs-12">Shop Now <i
+                                class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+                <div class="col-4  position-relative">
+                    <img src="asset/Images/banner-3.png" alt="" class="img-fluid br-10">
+                    <div class="poster-text p-lr-50 position-absolute">
+                        <h4 class="quicksand fs-24 fw-bolder mb-15">The best Organic <br>Products Online</h4>
+                        <a href="" class="text-light quicksand fw-bolder br-5 fs-12">Shop Now <i
+                                class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR PRODUCTS -->
+    <section class="pt-15">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="featured-title p-10 w-23 ">
+                <h2 class="fs-32 heading-black m-0 quicksand fw-bold">Popular Products</h2>
+            </div>
+            <div class="featured-tabs m-t-4 p-10">
+                <ul class="d-flex m-0  align-items-center">
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs  bs-theme heading-black fs-15 fw-semibold ">All</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs   heading-black fs-15 fw-semibold ">Baking Material</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs   heading-black fs-15 fw-semibold ">Fresh Fruits</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs   heading-black fs-15 fw-semibold ">Milk & Dairies</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs   heading-black fs-15 fw-semibold ">Meats</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs   heading-black fs-15 fw-semibold ">Vegetables</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ITEMS -->
+    <section>
+        <div class="container ">
+            <div class="product-grid ">
+
+                <!------ PRODUCT 1 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-theme br-15-0-20 fs-12 lh-1 lato z-2">13%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-1-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-1-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Seeds of Change Organic Red Rice
+                                </h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">2</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 ">
+                                    NestFood</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$28.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $32.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs"
+                                    onclick="addCart('asset/Images/product-1-1.jpg','Seeds of Change Organic Red Rice','$28.85')"
+                                    id="liveToastBtn"><i class="bi bi-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 2 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-dicount-1 br-15-0-20 fs-12 lh-1 lato z-2">66%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-2-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-2-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Fresh Seafood</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">All Natural Style Chicken
+                                    Meatballs </h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Wonderful
+                                </a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder fs-18 quicksand bs-theme">$23.00 </span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $32.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs"
+                                    onclick="addCart('asset/Images/product-2-1.jpg','All Natural Style Chicken Meatballs','$23.00')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 3 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-dicount-2 br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                    <span
+                        class="text-light discount dis-pad position-absolute end-0 top-0 bg-theme br-0-15-0-20 fs-12 lh-1 lato z-2">New</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-3-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-3-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Angie’s Sweet & Salty Kettle
+                                    Corn</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12 pro-rat-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">1</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Country Crock
+                                </a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder fs-18 quicksand bs-theme text-decoration-underline">$48.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $52.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                    onclick="addCart('asset/Images/product-3-1.jpg','Angie’s Sweet & Salty Kettle Corn','$48.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------ PRODUCT 4 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <!-- <span class="text-light discount dis-pad position-absolute bg-dicount-2 br-15-0-20 fs-12 lh-1 lato z-2">8%</span> -->
+                    <!-- <span class="text-light discount dis-pad position-absolute end-0 top-0 bg-theme br-0-15-0-20 fs-12 lh-1 lato z-2">New</span> -->
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-4-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-4-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Foster Farms Takeout Crispy
+                                    Classic</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12 pro-rat-3">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Country
+                                    Crock</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder fs-18 quicksand bs-theme text-decoration-underline">$17.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $19.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                    onclick="addCart('asset/Images/product-4-1.jpg','Foster Farms Takeout Crispy Classic','$17.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 5 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <!-- <span class="text-light discount dis-pad position-absolute bg-dicount-2 br-15-0-20 fs-12 lh-1 lato z-2">8%</span> -->
+                    <span
+                        class="text-light discount dis-pad position-absolute end-0 top-0 bg-theme br-0-15-0-20 fs-12 lh-1 lato z-2">Hot</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-5-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-5-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Blue Almonds Lightly Salted
+                                    Vegetables</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12 pro-rat-3">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Country
+                                    Crock</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder fs-18 quicksand bs-theme text-decoration-underline">$23.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $25.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                    onclick="addCart('asset/Images/product-5-1.jpg','Blue Almonds Lightly Salted Vegetables','$23.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 6 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-dicount-1 br-15-0-20 fs-12 lh-1 lato z-2">2%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-6-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-6-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Chobani Complete Vanilla Greek
+                                    Yogurt</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Country Crock
+                                </a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder fs-18 quicksand bs-theme">$54.85 </span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $55.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs"
+                                    onclick="addCart('asset/Images/product-6-1.jpg','Chobani Complete Vanilla Greek Yogurt','$54.85 ')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 7 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-theme br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-10-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-10-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Haagen Caramel Cone Ice Cream
+                                    Boxed</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">1</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                    Hel</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$22.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $24.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                    onclick="addCart('asset/Images/product-10-1.jpg','Haagen Caramel Cone Ice Cream Boxed','$22.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 8 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-dicount-3 br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-9-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-9-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Fresh Seafood</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Gorton’s Beer Battered Fish
+                                    Fillets</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                    Hel</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$23.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $25.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                    onclick="addCart('asset/Images/product-9-1.jpg','Gorton’s Beer Battered Fish Fillets','$23.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 9 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-theme br-15-0-20 fs-12 lh-1 lato z-2">6%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-8-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-8-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Clothing & beauty</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Encore Seafoods Stuffed Alaskan
+                                </h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                    Hel</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$35.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $37.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                    onclick="addCart('asset/Images/product-8-1.jpg','Encore Seafoods Stuffed Alaskan','$35.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ PRODUCT 10 ------>
+                <div class="products br-15 position-relative bs-theme">
+                    <span
+                        class="text-light discount dis-pad position-absolute bg-dicount-4 br-15-0-20 fs-12 lh-1 lato z-2">3%</span>
+                    <!------ PRODUCT IMAGE  ------>
+                    <div class="product-img pro-pad position-relative overflow-hidden">
+                        <img src="asset/Images/product-7-1.jpg" alt="" class="img-fluid d-block overflow-hidden ">
+                        <img src="asset/Images/product-7-2.jpg" alt="" class=" position-absolute z-n1">
+                        <ul
+                            class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                            <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                    <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!------ PRODUCT INFORMATION   ------>
+                    <div class="product-info pro-pad2">
+                        <div class="pro-title">
+                            <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                        </div>
+                        <div class="pro-title2">
+                            <a href="">
+                                <h2 class="quicksand fs-16 heading-black fw-bolder trs">Canada Dry Ginger Ale – 2 L
+                                    Bottle</h2>
+                            </a>
+                        </div>
+                        <!------ RATING ------>
+                        <div class="rating mb-1">
+                            <span class="fs-12">
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                                <i class="bi bi-star text-grey"></i>
+                            </span>
+                            <span class="number-grey num-mar fs-13 lato">0</span>
+                        </div>
+                        <div class="vendord">
+                            <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                    Hel</a></span>
+                        </div>
+                        <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                            <div class="price">
+                                <span class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$32.85</span>
+                                <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $33.80 </del>
+                            </div>
+                            <div class="add-cart">
+                                <button class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs"
+                                    onclick="addCart('asset/Images/product-7-1.jpg','Canada Dry Ginger Ale – 2 L Bottle','$32.85')"><i
+                                        class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- DAILY SELLS -->
+    <section>
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="featured-title p-10 w-23 ">
+                <h2 class="fs-32 heading-black m-0 quicksand fw-bold">Popular Products</h2>
+            </div>
+            <div class="featured-tabs m-t-4 p-10">
+                <ul class="d-flex m-0  align-items-center">
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs bs-theme heading-black fs-15 fw-semibold ">All</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs heading-black fs-15 fw-semibold ">Deals Of the Day</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs heading-black fs-15 fw-semibold ">Beauty</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs heading-black fs-15 fw-semibold ">Bread & Juice</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs heading-black fs-15 fw-semibold ">Drinks</a></li>
+                    <li class="fea-mar pro-list trs text-bottom"><a href=""
+                            class="quicksand trs heading-black fs-15 fw-semibold ">Milks</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 p-10">
+                    <div class=" banner-text p-50 br-15 h-520 ">
+                        <h2 class="fs-40 heading-black quicksand fw-bold  mb-100 lh-1-2">Bring nature into your home
+                        </h2>
+                        <a href="" class="text-light quicksand fw-bolder br-5 fs-12">Shop Now <i
+                                class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
+                <div class="col-9  p-10">
+                    <div class="sell-slider ">
+
+                        <!-- SELL PRODUCT SLIDES-->
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute bg-theme br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-10-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-10-2.jpg" alt="" class=" position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Dried fruit: apricots,
+                                            figs, prunes</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$32.85</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $33.80
+                                        </del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 81.29%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 113 / 26</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">81.29%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-10-1.jpg','Dried fruit: apricots, figs, prunes','$32.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute bg-theme br-15-0-20 fs-12 lh-1 lato z-2">13%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-1-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-1-2.jpg" alt="" class=" position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Seeds of Change Organic
+                                            Red Rice</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">2</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$28.85</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $32.80
+                                        </del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 27.91%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 108 / 279</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">27.91%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-1-1.jpg','Seeds of Change Organic Red Rice','$28.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <!-- <span class="text-light discount dis-pad position-absolute bg-theme br-15-0-20 fs-12 lh-1 lato z-2">13%</span>  -->
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-4-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-4-2.jpg" alt="" class=" position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Foster Farms Takeout
+                                            Crispy Classic</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$17.85</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $19.80
+                                        </del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 60 / 20</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">75%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-4-1.jpg','Foster Farms Takeout Crispy Classic','$17.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <!-- <span class="text-light discount dis-pad position-absolute bg-dicount-2 br-15-0-20 fs-12 lh-1 lato z-2">8%</span> -->
+                            <span
+                                class="text-light discount dis-pad position-absolute end-0 top-0 bg-theme br-0-15-0-20 fs-12 lh-1 lato z-2">Hot</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-5-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-5-2.jpg" alt="" class=" position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Blue Almonds Lightly
+                                            Salted Vegetables</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12 pro-rat-3">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$23.85</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $25.80
+                                        </del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 40.96%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 102 / 147</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">40.96%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-5-1.jpg','Blue Almonds Lightly Salted Vegetables','$23.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-dicount-5 br-15-0-20 fs-12 lh-1 lato z-2">2%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-6-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-6-2.jpg" alt="" class=" position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Chobani Complete Vanilla
+                                            Greek Yogurt</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$54.85</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $55.80
+                                        </del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 75.42%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 89 / 29</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">75.42%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14 "
+                                            onclick="addCart('asset/Images/product-6-1.jpg','Chobani Complete Vanilla Greek Yogurt','$54.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-----  DEAL OF THE DAY ----->
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-theme br-15-0-20 fs-12 lh-1 lato z-2">13%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-20-4-min.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-20-2-min.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Organic Cage Grade A
+                                            Large Eggs</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$21.00</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">
+                                            $24.00</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 55.42%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 102 / 73</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">55.42%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-20-4-min.jpg','Organic Cage Grade A Large Eggs','$21.00')">
+                                            <i class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-theme br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-15-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-15-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Deal of the day</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Naturally Flavored
+                                            Cinnamon Vanilla</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$51.00</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">
+                                            $55.00</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 32.22%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 44 / 23</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">33.22%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-15-1.jpg','Naturally Flavored Cinnamon Vanilla','$51.00')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-theme br-15-0-20 fs-12 lh-1 lato z-2">27%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-11-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-11-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Dried fruit: apricots,
+                                            figs, prunes</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$56.00</span>
+                                        <del
+                                            class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">$76.00</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 130 / 110</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">90.00%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-11-1.jpg','Dried fruit: apricots, figs, prunes','$56.00')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----- BEAUTY ----->
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-theme br-15-0-20 fs-12 lh-1 lato z-2">6%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-8-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-8-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Clothing & beauty</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Encore Seafoods Stuffed
+                                            Alaskan</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">3</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$35.85</span>
+                                        <del
+                                            class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">$37.60</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 10 / 3</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">33%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-8-1.jpg','Encore Seafoods Stuffed Alaskan','$35.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-dicount-4 br-15-0-20 fs-12 lh-1 lato z-2">3%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-7-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-7-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Canada Dry Ginger Ale –
+                                            2 L Bottle</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$32.85</span>
+                                        <del
+                                            class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">$33.00</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 66%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 200 / 150</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">75%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-7-1.jpg','Canada Dry Ginger Ale – 2 L Bottle','$32.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-theme br-15-0-20 fs-12 lh-1 lato z-2">21%</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-13-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-13-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Fresh Fruit</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Frozen fruit strawberry,
+                                            berries</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$78.00</span>
+                                        <del
+                                            class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">$98.00</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 150 / 90</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">60%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-13-1.jpg','Frozen fruit strawberry, berries','$78.00')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-dicount-2 br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                            <span
+                                class="text-light discount dis-pad position-absolute end-0 bg-theme br-0-15-0-20 br-15-0-20 fs-12 lh-1 lato z-2">New</span>
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-3-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-3-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Baking material</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Angie’s Sweet & Salty
+                                            Kettle Corn</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill bs-action-hover"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$78.00</span>
+                                        <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">
+                                            $98.00</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 150 / 90</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">60%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-3-1.jpg','Angie’s Sweet & Salty Kettle Corn','$78.00')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products br-15 position-relative bs-theme sell-slides">
+                            <span
+                                class="text-light discount dis-pad position-absolute start-0 bg-dicount-3 br-15-0-20 fs-12 lh-1 lato z-2">8%</span>
+                            <!-- <span class="text-light discount dis-pad position-absolute end-0 bg-theme br-0-15-0-20 br-15-0-20 fs-12 lh-1 lato z-2">New</span>  -->
+                            <!------ PRODUCT IMAGE  ------>
+                            <div class="product-img pro-pad position-relative overflow-hidden">
+                                <img src="asset/Images/product-9-1.jpg" alt=""
+                                    class="img-fluid d-block overflow-hidden ">
+                                <img src="asset/Images/product-9-2.jpg" alt="" class="position-absolute z-n1">
+                                <ul
+                                    class="product-action d-flex br-5 bg-light  position-absolute bs-border start-50 top-50 z-3 d-none">
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-eye"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-shuffle"></i></a></li>
+                                    <li class="border-theme2"><a href="" data-bs-custom-class="custom-tooltip"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Wishlist">
+                                            <i class="text-theme fw-bolder fs-16 bi bi-heart"></i></a></li>
+                                </ul>
+                            </div>
+                            <!------ PRODUCT INFORMATION   ------>
+                            <div class="product-info pro-pad2">
+                                <div class="pro-title">
+                                    <a href="" class="lato fs-12 own-grey trs">Fresh seafood</a>
+                                </div>
+                                <div class="pro-title2">
+                                    <a href="">
+                                        <h2 class="quicksand fs-16 heading-black fw-bolder trs">Gorton’s Beer Battered
+                                            Fish Fillets</h2>
+                                    </a>
+                                </div>
+                                <!------ RATING ------>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="pro-bottom mt-10">
+                                    <div class="price">
+                                        <span
+                                            class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$23.85</span>
+                                        <del
+                                            class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">$25.80</del>
+                                    </div>
+                                    <div class="progress mt-10" style="height: 8px;">
+                                        <div class="progress-bar bg-theme" role="progressbar" aria-label="Basic example"
+                                            style="width: 30.33%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress-number d-flex justify-content-between">
+                                        <div class="sold">
+                                            <span class="fs-13 lato heading-black">Sold : 33 / 10</span>
+                                        </div>
+                                        <div class="sold-per">
+                                            <span class="fs-13 quicksand text-theme">30.33%</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart mt-10 ">
+                                        <button
+                                            class="add-cart-pad border-0 bg-theme fw-bolder text-light quicksand br-5 trs w-100 fs-14"
+                                            onclick="addCart('asset/Images/product-9-1.jpg','Gorton’s Beer Battered Fish Fillets','$23.85')"><i
+                                                class="bi bi-cart mr-5" id="liveToastBtn"></i> Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEALS OF THE DAY -->
+    <section class="pt-15">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="featured-title pb-20 w-23 ">
+                <h2 class="fs-32 heading-black m-0 quicksand fw-bold">Deals of the day</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="deal  position-relative pb-25">
+                        <img src="asset/Images/banner-5-min.png" alt=""
+                            class="br-15  overflow-hidden img-fluid position-relative">
+                        <div class="trs deals-pro pro-content-padd br-10 position-relative bg-light ">
+                            <h2><a href="" class="fw-semibold rs fw-semibold heading-black fs-16 quicksand">Organic Cage
+                                    Grade A Large Eggs</a></h2>
+                            <div class="vendord">
+                                <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                        Hel</a></span>
+                            </div>
+                            <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$21.00</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">
+                                        $24.00</del>
+                                </div>
+                                <div class="add-cart">
+                                    <button
+                                        class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs"
+                                        onclick="addCart('asset/Images/banner-5-min.png','Organic Cage Grade A Large Eggs','$21.00')"><i
+                                            class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="deal  position-relative pb-25">
+                        <img src="asset/Images/banner-6-min.png" alt=""
+                            class="br-15  overflow-hidden img-fluid position-relative">
+                        <div class="trs deals-pro pro-content-padd br-10 position-relative bg-light ">
+                            <h2 class="w-90"><a href=""
+                                    class="fw-semibold trs fw-semibold heading-black fs-16 quicksand">Naturally Flavored
+                                    Cinnamon Vanilla</a></h2>
+                            <div class="vendord">
+                                <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                        Hel</a></span>
+                            </div>
+                            <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$51.00</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through">
+                                        $55.00</del>
+                                </div>
+                                <div class="add-cart">
+                                    <button
+                                        class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                        onclick="addCart('asset/Images/banner-6-min.png','Naturally Flavored Cinnamon Vanilla','$51.00')">
+                                        <i class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="deal position-relative pb-25">
+                        <img src="asset/Images/banner-7-min.png" alt=""
+                            class="br-15  overflow-hidden img-fluid position-relative">
+                        <div class="trss deals-pro pro-content-padd br-10 position-relative bg-light ">
+                            <h2 class="w-90"><a href=""
+                                    class=" fw-semibold trs fw-semibold heading-black fs-16 quicksand">Dried fruit:
+                                    apricots, figs, prunes</a></h2>
+                            <div class="vendord">
+                                <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 "> Hambger
+                                        Hel</a></span>
+                            </div>
+                            <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$61.50</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $66.00
+                                    </del>
+                                </div>
+                                <div class="add-cart">
+                                    <button
+                                        class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                        onclick="addCart('asset/Images/banner-7-min.png','Dried fruit: apricots, figs, prunes','$61.50')">
+                                        <i class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="deal  position-relative pb-25">
+                        <img src="asset/Images/banner-8-min.png" alt=""
+                            class="br-15  overflow-hidden img-fluid position-relative">
+                        <div class="trs deals-pro trs pro-content-padd br-10 w-94  position-relative bg-light ">
+                            <h2 class="w-90"><a href=""
+                                    class="fw-semibold trs fw-semibold heading-black fs-16 quicksand">Organic Cage Grade
+                                    A Large Eggs</a></h2>
+                            <div class="vendord">
+                                <span class="lato text-grey fs-16">By <a href="" class="lato bs-theme fs-16 ">USA Noodle
+                                        Soup</a></span>
+                            </div>
+                            <div class="pro-bottom mt-12 d-flex justify-content-between align-items-center">
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$56.00</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through"> $76.00
+                                    </del>
+                                </div>
+                                <div class="add-cart">
+                                    <button
+                                        class="cart-pad bg-light-theme border-0 bs-theme fw-bolder quicksand br-5 trs "
+                                        onclick="addCart('asset/Images/banner-8-min.png','Organic Cage Grade A Large Eggs','$56.00')"><i
+                                            class="bi bi-cart" id="liveToastBtn"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  TOP SELLING -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 p-10">
+                    <div class="top-selling ">
+                        <h2 class="fs-24 heading-black m-0 pb-20 quicksand fw-bold">Top Selling</h2>
+                    </div>
+                    <div class="divider position-relative bs-border"></div>
+                    <!-- SELLING PRODUCTS -->
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs ">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-10-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Haagen Caramel Cone Ice <br>
+                                        Cream Boxed</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$22.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$24.80
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-1-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Seeds of Change Organic Red
+                                        <br> Rice
+                                    </h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">2</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$28.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$32.80
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20 trs">
+                        <article class="d-flex align-items-center">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-5-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Blue Almonds Lightly
+                                        Salted<br> Vegetables</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$23.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$25.80
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="col-3 p-10">
+                    <div class="top-selling ">
+                        <h2 class="fs-24 heading-black m-0 pb-20 quicksand fw-bold">Trending Products</h2>
+                    </div>
+                    <div class="divider position-relative bs-border"></div>
+                    <!-- SELLING PRODUCTS -->
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-4-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Foster Farms Takeout
+                                        Crispy<br> Classic</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$17.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$19.80
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-10-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Haagen Caramel Cone Ice
+                                        <br>Cream Boxed
+                                    </h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$22.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$24.80
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-9-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Gorton’s Beer Battered Fish
+                                        <br> Fillets
+                                    </h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$23.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">
+                                        $25.80 </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="col-3 p-10">
+                    <div class="top-selling ">
+                        <h2 class="fs-24 heading-black m-0 pb-20 quicksand fw-bold">Recently Added</h2>
+                    </div>
+                    <div class="divider position-relative bs-border"></div>
+                    <!-- SELLING PRODUCTS -->
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-20-4-min.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Organic Cage Grade A Large
+                                        <br> Eggs
+                                    </h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$21.00</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$24.00
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-15-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Naturally Flavored Cinnamon
+                                        <br> Vanilla
+                                    </h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">0</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$51.00</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$55.00
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-20-2-min.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Seeds of Change Organic <br>
+                                        Watermelon</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$61.50</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$66.00
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="col-3 p-10">
+                    <div class="top-selling ">
+                        <h2 class="fs-24 heading-black m-0 pb-20 quicksand fw-bold">Top Rated</h2>
+                    </div>
+                    <div class="divider position-relative bs-border"></div>
+                    <!-- SELLING PRODUCTS -->
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-3-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Angie’s Sweet & Salty
+                                        Kettle<br> Corn</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$48.85</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">$52.80
+                                    </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-20-3-min.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Pre-portioned, low-fat ice
+                                        cream <br> yogurt</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$79.00</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">
+                                        $99.00 </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="top-selling-pro pt-30 mb-20">
+                        <article class="d-flex align-items-center trs">
+                            <div class="col-md-4 pro-img pr-15">
+                                <img src="asset/Images/product-20-2-min.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="pro-title2">
+                                <a href="">
+                                    <h6 class="quicksand fs-16 heading-black fw-bolder trs">Seeds of Change Organic <br>
+                                        Watermelon</h6>
+                                </a>
+                                <div class="rating mb-1">
+                                    <span class="fs-12">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star text-grey"></i>
+                                    </span>
+                                    <span class="number-grey num-mar fs-13 lato">1</span>
+                                </div>
+                                <div class="price">
+                                    <span
+                                        class="fw-bolder text-decoration-underline fs-18 quicksand bs-theme">$61.50</span>
+                                    <del class="ps-2 quicksand own-grey fs-14 text-decoration-line-through fw-bold">
+                                        $66.00 </del>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER BANNER -->
+    <section>
+        <div class="container p-10">
+            <div class="footer-banner position-relative br-20 mb-15">
+                <div class="news-content">
+                    <h2 class="mb-20 quicksand fs-40 heading-black fw-bold">Stay home & get your daily <br> needs from
+                        our shop</h2>
+                    <p class="mb-45 lato fs-18 text-grey">Start Your Daily Shopping with <span class="bs-theme">Nest
+                            Mart</span> </p>
+                    <form action="" class="sub-form w-450 h-64 position-relative">
+                        <input type="email" name="email" placeholder="Your email address"
+                            class="w-100 h-100 br-30 border-0 p-lr-30" required="">
+                        <input type="submit" name="Subscribe" value="Subscribe"
+                            class="position-absolute end-0 p-lr-30 bg-theme border-0 h-100 br-30 quicksand text-light fw-bold"
+                            required="">
+                    </form>
+                </div>
+                <img src="asset/Images/banner-9-min.png" alt="" class="position-absolute">
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="brand-padd">
+        <div class="container">
+            <div class="brands">
+                <div class="brand-item br-10 bg-new-brand">
+                    <div class="brand-inner p-20 d-flex">
+                        <div class="brand-icon w-60 h-60 mr-20">
+                            <img src="asset/Images/icon-1.png" alt="" class="img-fluid trs">
+                        </div>
+                        <div class="brand-text">
+                            <h3><a href="" class="fs-18 quicksand brand-black">Best prices & offers</a></h3>
+                            <p class="fs-16 m-0 lato own-grey">Orders $50 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-item br-10 bg-new-brand">
+                    <div class="brand-inner p-20 d-flex">
+                        <div class="brand-icon w-60 h-60 mr-20">
+                            <img src="asset/Images/icon-2.png" alt="" class="img-fluid trs">
+                        </div>
+                        <div class="brand-text">
+                            <h3><a href="" class="fs-18 quicksand brand-black">Free delivery</a></h3>
+                            <p class="fs-16 m-0 lato own-grey">24/7 amazing services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-item br-10 bg-new-brand">
+                    <div class="brand-inner p-20 d-flex">
+                        <div class="brand-icon w-60 h-60 mr-20">
+                            <img src="asset/Images/icon-3.png" alt="" class="img-fluid trs">
+                        </div>
+                        <div class="brand-text">
+                            <h3><a href="" class="fs-18 quicksand brand-black">Great daily deal</a></h3>
+                            <p class="fs-16 m-0 lato own-grey">When you sign up</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-item br-10 bg-new-brand">
+                    <div class="brand-inner p-20 d-flex">
+                        <div class="brand-icon w-60 h-60 mr-20">
+                            <img src="asset/Images/icon-4.png" alt="" class="img-fluid trs">
+                        </div>
+                        <div class="brand-text">
+                            <h3><a href="" class="fs-18 quicksand brand-black">Wide assortment</a></h3>
+                            <p class="fs-16 m-0 lato own-grey">Mega Discounts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-item br-10 bg-new-brand">
+                    <div class="brand-inner p-20 d-flex">
+                        <div class="brand-icon w-60 h-60 mr-20">
+                            <img src="asset/Images/icon-5.png" alt="" class="img-fluid trs">
+                        </div>
+                        <div class="brand-text">
+                            <h3><a href="" class="fs-18 quicksand brand-black">Easy returns</a></h3>
+                            <p class="fs-16 m-0 lato own-grey">Within 30 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section>
+        <div class="container">
+            <div class="footer d-flex justify-content-between">
+                <div class="footer-section p-10 mb-40">
+                    <div class="footer-logo mb-20 pb-13">
+                        <img src="asset/Images/logo.png" alt="">
+                    </div>
+                    <div class="footer-content">
+                        <p class="mb-30 fs-17 lato">Awesome grocery store website <br> template</p>
+                    </div>
+                    <div class="address mb-12">
+                        <i class="bi bi-geo-alt bs-theme mr-5"></i> <strong
+                            class="fw-normal fs-15 lato heading-black">Address</strong> <span
+                            class="fs-15 lato heading-black">5171 W Campbell Ave undefined <br> Kent, Utah 53127 United
+                            States</span>
+                    </div>
+                    <div class="contatct mb-12">
+                        <i class="bi bi-headphones bs-theme  mr-5"></i> <strong
+                            class="quicksand fw-medium heading-black fs-15">Call us </strong><span
+                            class="bs-theme fs-15 lato">(+91)-540-025-124553</span>
+                    </div>
+                    <div class="email mb-12">
+                        <i class="bi bi-envelope bs-theme  mr-5"></i><strong
+                            class="quicksand fw-medium heading-black fs-15"> Email </strong><span
+                            class="bs-theme fs-15 lato">sale@Nest.com</span>
+                    </div>
+                    <div class="time mb-12">
+                        <i class="bi bi-clock bs-theme  mr-5"></i><strong
+                            class="quicksand fw-medium heading-black fs-15"> Hours </strong><span
+                            class="heading-black fs-15 lato">10:00 - 18:00, Mon - Sat</span>
+                    </div>
+                </div>
+                <div class="footer-company p-10 foot-com">
+                    <h3 class="fs-24 quicksand mb-20 fw-bold heading-black">Company</h3>
+                    <ul class="footer-list">
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">About us</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Deliver Information</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Privacy Policy</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Terms & conditions</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Contact Us</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Support Center</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-account p-10 foot-com">
+                    <h3 class="fs-24 quicksand mb-20 fw-bold heading-black">Account</h3>
+                    <ul class="footer-list">
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Sign In</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">View Cart</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">My Wishlist</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Track My Order</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Help Ticket</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Shipping Details</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Compare products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-corporate p-10 foot-com">
+                    <h3 class="fs-24 quicksand mb-20 fw-bold heading-black">Corporate</h3>
+                    <ul class="footer-list">
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Become a Vendor</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Affiliate Program</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Farm Business</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Farm Careers</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Our Suppliers</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Accessibility</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Promotions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-corporate p-10 foot-com">
+                    <h3 class="fs-24 quicksand mb-20 fw-bold heading-black">Popular</h3>
+                    <ul class="footer-list">
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Milk & Flavoured Milk</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Butter and Margarine</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Eggs Substitutes</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Marmalades</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Sour Cream and Dips</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Tea & Kombucha</a></li>
+                        <li class="mb-13"><a href="" class="fs-15 lato heading-black trs">Cheese</a></li>
+                    </ul>
+                </div>
+                <div class="footer-corporate p-10 foot-com">
+                    <div class="installation mb-10">
+                        <h3 class="fs-24 quicksand pb-20 fw-bold heading-black">Install App</h3>
+                        <p class="mb-20 lato fs-16 text-grey"> From App Store or Google Play</p>
+                    </div>
+                    <ul class="download-app d-flex pb-15">
+                        <li class="app-padd"><a href="" class=" mb-sm-2 mb-lg-0 "><img
+                                    src="asset/Images/google-play.jpg" alt="" class="w-128 trs "></a></li>
+                        <li class="app-padd2"><a href="" class=" mb-sm-2 mb-lg-0 "><img src="asset/Images/app-store.jpg"
+                                    alt="" class="w-128 trs "></a></li>
+                    </ul>
+                    <div class="payment mb-10">
+                        <p class="mb-10 fs-16 lato heading-black"> Secured Payment Gateways</p>
+                    </div>
+                    <ul class="pay-method pb-15">
+                        <li class="app-padd"><a href="" class="mb-sm-2 mb-lg-0 "><img
+                                    src="asset/Images/payment-method.png" alt="" class="img-fluid trs"></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CART MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-26" id="exampleModalLabel">Cart Item</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="heading-black fs-18 quicksand fw-semibold">This Item is already in Cart</p>
+                </div>
+                <div class="modal-footer checkout">
+                    <!-- <button type="button" class="btn text-light" style="background-color: #57b846;" data-bs-dismiss="modal">Close</button> -->
+                    <a href="cart.html"><button class="me-3">View Cart</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="asset/JavaScript/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <!-- <script>
+        let toast = document.getElementById("liveToastBtn");
+        $("#liveToastBtn").click(function () {
+          
+        });
+    </script> -->
+    <script src="asset/JavaScript/own.jquery.js"></script>
+    <script src="asset/JavaScript/headline.js"></script>
+    <script src="asset/JavaScript/slick.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <!------ JQUERY SCRIPT ------>
+    <script>
+        $(window).on("load", function () {
+            $('.loader').delay(1000).fadeOut();
+        });
+        $(document).ready(function () {
+            $(".categories-btn").click(function () {
+                $(".categories-dropdown").toggleClass("show");
+                $(".bi-chevron-down").toggleClass("bi-chevron-up");
+            });
+        });
+    </script>
+
+    <script>
+        // TOOL TIP FOR ERROR OR NOTIFICATION
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const cartIcon = document.getElementById("cartIcon");
+        cartIcon.addEventListener("click", function () {
+            window.location.href = "cart.html";
+        });
+        let cartCount = 0;
+        let cartNumber = document.getElementById("cartCount");
+
+        // MAIN CART FUNCTION
+        function addCart(image, name, price) {
+            let ProductDetail = JSON.parse(localStorage.getItem('ProductDetail')) || [];
+            // CHECK IF IT'S ALREADY ADDED OR NOT
+            if (ProductDetail.some(products => products.name === name)) {
+                $('.modal').modal('show');
+                return;
+            }
+
+            // CART COUNTER 
+            cartCount += 1;
+            console.log(cartCount);
+            cartNumber.innerHTML = cartCount;
+
+            // DATA PUSH TO LOCACLSTORGAE
+            ProductDetail.push({ image, name, price });
+            localStorage.setItem('ProductDetail', JSON.stringify(ProductDetail));
+        }
+    </script>
+
+
+    <!------ SLIDER SCRIPT ------>
+    <script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $(".banner").slick({
+                    dots: true,
+                    nav: true,
+                    // infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: "linear",
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+            $('.main-items').slick({
+                infinite: true,
+                speed: 1200,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                lazyLoad: 'ondemand',
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                nav: true,
+            });
+            $('.sell-slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                margin: 20,
+                nav: true,
+            });
+        });
+
+    </script>
+</body>
+
+</html>
